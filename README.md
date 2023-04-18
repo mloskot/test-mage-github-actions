@@ -1,2 +1,4 @@
 # test-mage-github-actions
-Test running Mage with GitHub Actions workflow
+
+Try https://magefile.org with GitHub Actions workflow to do something useful,
+optionally with Go standard library only without depending on any other Go packages.
