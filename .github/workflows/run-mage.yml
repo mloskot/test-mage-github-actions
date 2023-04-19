@@ -11,5 +11,11 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-go@v4
       - run: go version
-      - run: |
-          go run mage.go -l
+      - uses: magefile/mage-action@v2
+        with:
+          version: latest
+          args: clean
+      - uses: magefile/mage-action@v2
+        with:
+          version: latest
+          args: -l
