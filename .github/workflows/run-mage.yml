@@ -1,0 +1,15 @@
+---
+name: 'run-mage'
+
+on:  # yamllint disable-line rule:truthy
+  workflow_dispatch:
+
+jobs:
+  mage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v4
+      - run: go version
+      - run: |
+          go run mage.go -l
