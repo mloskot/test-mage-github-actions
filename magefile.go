@@ -16,3 +16,11 @@ func Clean() {
 	log.Println("Deleting README.generated.md")
 	os.RemoveAll("README.generated.md")
 }
+
+// Generate README wth list of files.
+func Generate() {
+	if err := sh.Run("ls -1"); err != nil {
+        return err
+    }
+    return sh.Run("ls -1", ".github")
+}

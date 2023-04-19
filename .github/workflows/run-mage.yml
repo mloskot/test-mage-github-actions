@@ -14,8 +14,8 @@ jobs:
       - uses: magefile/mage-action@v2
         with:
           version: latest
-          args: clean
+          args: -l
       - uses: magefile/mage-action@v2
         with:
           version: latest
-          args: -l
+          args: clean
