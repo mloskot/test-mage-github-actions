@@ -2,6 +2,7 @@
 name: 'run-mage'
 
 on:  # yamllint disable-line rule:truthy
+  push:
   workflow_dispatch:
 
 jobs:
